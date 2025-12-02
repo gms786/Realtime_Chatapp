@@ -48,12 +48,12 @@
                                 $mail->isSMTP();
                                 $mail->Host = 'smtp.gmail.com';
                                 $mail->SMTPAuth = true;
-                                $mail->Username = 'gmsiddiqui36@gmail.com'; // Your email
-                                $mail->Password = 'jtsqgjbtnmmcmvvo'; // Replace with your app password
+                                $mail->Username = ''; // Your email
+                                $mail->Password = ; // Replace with your app password
                                 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
                                 $mail->Port = 587;
 
-                                $mail->setFrom('gmsiddiqui36@gmail.com', 'Real Time Chat');
+                                $mail->setFrom('', '');
                                 $mail->addAddress($email); // Send to user
 
                                 $mail->isHTML(true);
